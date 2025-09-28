@@ -1,6 +1,9 @@
 # urljpdecorder
 
 A new Flutter project.
+クリップボード上の日本語がエンコードされたURLを日本語として可読にしてクリップボードに戻す。
+firebaseで以下のURLにPWAとしてホスティング
+https://urljpdecoder.web.app/
 
 ## Getting Started
 
