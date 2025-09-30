@@ -1,4 +1,4 @@
-# urljpdecorder
+# urljpdecoder
 
 A new Flutter project.
 クリップボード上の日本語がエンコードされたURLを日本語として可読にしてクリップボードに戻す。
