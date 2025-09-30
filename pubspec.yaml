@@ -35,6 +35,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  #
+  flutter_launcher_icons:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -87,3 +90,41 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_launcher_icons:
+  # 必須の設定
+  android: "launcher_icon" # Androidのアプリアイコン名
+  ios: true                # iOSアプリアイコンを生成
+  image_path: "assets/icon/urljpdecoder.png" # 1で準備したアイコンファイルのパス
+
+  # PWA (Web) の設定 (Webアプリに特化した設定)
+  web:
+    generate: true
+    image_path: "assets/icon/urljpdecoder.png"
+    # PWAのWebマニフェストファイルを自動更新
+    # マニフェストファイルが web/manifest.json にあることを想定
+    file_name: "manifest.json" 
+  
+  # その他のプラットフォーム（Windows, Linuxなど）が必要な場合
+  windows:
+    generate: true
+    image_path: "assets/icon/urljpdecoder.png"
+    icon_size: 48 # Windowsアイコンのサイズ (任意)
+
+### ```
+
+### 4. アイコンの自動生成と適用
+
+### 設定を保存した後、以下のコマンドをターミナルで実行してアイコンを生成します。
+
+### ```sh
+### flutter pub run flutter_launcher_icons:main
+### ```
+
+### このコマンドが実行されると、以下の処理が自動で行われます。
+
+### * `assets/icon/app_icon.png`を読み込む。
+### * Android、iOS、Web（`web/manifest.json`を含む）向けに、必要なすべての解像度と形式のアイコンファイルを生成し、各プラットフォームのネイティブディレクトリに配置する。
+
+### 5. Webビルドの再実行
+
+### Webアプリ（PWA）のアイコンを完全に反映させるため、必ず再ビルドを実行してください。
