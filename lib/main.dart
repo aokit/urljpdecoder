@@ -33,7 +33,7 @@ class UrlDecoderPage extends StatefulWidget {
 class _UrlDecoderPageState extends State<UrlDecoderPage> {
   final TextEditingController _urlController = TextEditingController();
   String _message = 'アプリを起動して最初の処理を実行します。';
-  final String _anchor = '#:~:text=';
+  // final String _anchor = '#:~:text=';
 
   @override
   void initState() {
