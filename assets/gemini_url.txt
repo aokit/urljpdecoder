@@ -1,2 +1,4 @@
 以下のセッションでgeminiのアシストを利用した。
 https://g.co/gemini/share/48d1d41462a1
+その後、Progressive Web App としてデプロイ（ホスティング）する手順まで。
+https://g.co/gemini/share/26d518f41400
