@@ -2,3 +2,10 @@
 https://g.co/gemini/share/48d1d41462a1
 その後、Progressive Web App としてデプロイ（ホスティング）する手順まで。
 https://g.co/gemini/share/26d518f41400
+
+
+アイコンを変えたら
+flutter pub run flutter_launcher_icons:main
+その後ビルドとデプロイ
+flutter build web --release
+firebase deploy --only hosting
