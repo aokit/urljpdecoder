@@ -106,7 +106,7 @@ class _UrlDecoderPageState extends State<UrlDecoderPage> {
               controller: _urlController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
                 ),
                 labelText: '処理結果',
                 hintText: 'ここにデコードされたURLが表示されます',
