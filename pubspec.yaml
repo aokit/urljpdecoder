@@ -110,6 +110,11 @@ flutter_launcher_icons:
     image_path: "assets/icon/urljpdecoder.png"
     icon_size: 48 # Windowsアイコンのサイズ (任意)
 
+  # https://gemini.google.com/share/f9344ef222ab
+  macos:
+    generate: true # macOSアイコン生成を有効にする
+    # image_path: "assets/icon/icon.png" # macOS用アイコンのパス (異なる画像を使いたい場合)
+
 ### ```
 
 ### 4. アイコンの自動生成と適用

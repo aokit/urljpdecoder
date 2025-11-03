@@ -1,0 +1,11 @@
+
+https://gemini.google.com/share/f9344ef222ab
+
+macOS についてもビルドするなら
+Xcodeをインストール
+ライセンス許諾を agree
+flutter doctor などで必要な upgrade を済ませる
+pubspec.yaml に macOS のアイコンの記述
+flutter clean
+flutter pub run flutter_launcher_icons:main
+flutter build macos --release
